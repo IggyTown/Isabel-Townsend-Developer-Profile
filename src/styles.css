@@ -1,5 +1,7 @@
-h1 {
-  font-family: "Poppins", sans-serif;
+:root {
+  --primary-color: #d196e7;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .IT-logo {
@@ -8,4 +10,98 @@ h1 {
   margin: 0 auto;
   display: block;
   border-radius: 10px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  color: black;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Poppins", san-serif;
+  font-weight: normal;
+  text-align: justify;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+}
+
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.secondary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.img-fluid {
+  width: 500px;
+}
+
+@media (max-width: 600px) {
+  h1 (font-size: 40px;) h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 10px;
+  }
+  .primary-link {
+    padding: 10px 5px;
+  }
+  .navigation-links {
+    margin-top: 30px;
+  }
+
+  .navigation-links a {
+    margin: 15px;
+  }
 }
