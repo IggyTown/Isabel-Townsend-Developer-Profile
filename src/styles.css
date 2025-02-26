@@ -1,0 +1,11 @@
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+.IT-logo {
+  height: 42px;
+  position: static;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+}
