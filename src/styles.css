@@ -1,103 +1,103 @@
 :root {
-  --primary-color: #d196e7;
-  --secondary-color: #f5f2fe;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
 }
 
-.IT-logo {
-  height: 42px;
-  position: static;
-  margin: 0 auto;
-  display: block;
-  border-radius: 10px;
+body {
+  font-family: var(--default-font-family);
 }
 
 h1,
 h2,
 h3 {
-  margin: 0;
+  color: black;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
 }
 
 h1 {
-  font-family: "Playfair Display", serif;
-  color: black;
-  font-weight: bold;
-  font-size: 60px;
+  font-size: 96px;
+  line-height: 1.5;
 }
 
 h2 {
-  font-size: 35px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-h3 {
-  font-size: 24px;
-  opacity: 0.7;
-  margin-top: 5px;
+  font-size: 64px;
 }
 
 p {
-  font-size: 18px;
-  line-height: 1.5;
-  font-family: "Poppins", san-serif;
   font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.introduction {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.introduction p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  color: #272142;
+}
+
+.introduction h2 {
+  font-family: var(--heading-font-family);
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: 24px;
+}
+
+.container p {
   text-align: justify;
 }
 
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
+.image-1 {
+  padding-top: 120px;
 }
 
-.navigation-links a {
-  margin: 20px;
-}
-
-.primary-link {
+.btn-branding {
+  background: var(--branding-color);
   border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
   color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
 
-.secondary-link {
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
   border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
 
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
+.project-desciption {
+  padding: 60px 40px;
 }
 
-@media (max-width: 600px) {
-  h1 (font-size: 40px;) h2 {
-    font-size: 25px;
-  }
-  h3 {
-    font-size: 18px;
-  }
-  p {
-    font-size: 10px;
-  }
-  .primary-link {
-    padding: 10px 5px;
-  }
-  .navigation-links {
-    margin-top: 30px;
+@media (max-width: 900px) {
+  h1 {
+    font-size: 44px;
+    line-height: 2;
   }
 
-  .navigation-links a {
-    margin: 15px;
+  h2 {
+    font-size: 44px;
+  }
+
+  .introduction {
+    padding: 80px 20px;
+  }
+
+  .project-desciption {
+    padding: 0;
+    text-align: center;
   }
 }
